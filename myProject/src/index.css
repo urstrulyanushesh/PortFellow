@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@config {
+  darkMode: "class";
+  theme: {
+    extend: {
+      colors: {
+        "on-secondary": "#ffffff",
+        "tertiary-fixed-dim": "#ffb59b",
+        "on-secondary-fixed": "#001356",
+        "tertiary": "#993100",
+        "on-primary": "#ffffff",
+        "surface-dim": "#dcd9d9",
+        "secondary-container": "#9fafff",
+        "surface-container-high": "#ebe7e7",
+        "inverse-surface": "#313030",
+        "inverse-primary": "#b8c3ff",
+        "on-tertiary-container": "#ffece6",
+        "on-surface": "#1c1b1b",
+        "error-container": "#ffdad6",
+        "surface": "#fcf9f8",
+        "on-primary-container": "#efefff",
+        "on-primary-fixed-variant": "#0035be",
+        "on-secondary-fixed-variant": "#304189",
+        "outline-variant": "#c4c5d9",
+        "on-tertiary-fixed": "#380d00",
+        "tertiary-container": "#c24100",
+        "surface-tint": "#124af0",
+        "primary-fixed-dim": "#b8c3ff",
+        "secondary-fixed": "#dde1ff",
+        "on-tertiary-fixed-variant": "#812800",
+        "surface-container": "#f0edec",
+        "on-error-container": "#93000a",
+        "secondary-fixed-dim": "#b8c3ff",
+        "surface-variant": "#e5e2e1",
+        "background": "#fcf9f8",
+        "on-error": "#ffffff",
+        "primary-container": "#2e5bff",
+        "on-secondary-container": "#2f4088",
+        "surface-bright": "#fcf9f8",
+        "outline": "#747688",
+        "error": "#ba1a1a",
+        "tertiary-fixed": "#ffdbcf",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-low": "#f6f3f2",
+        "on-surface-variant": "#434656",
+        "primary-fixed": "#dde1ff",
+        "on-primary-fixed": "#001356",
+        "secondary": "#4959a3",
+        "primary": "#0040e0",
+        "on-background": "#1c1b1b",
+        "inverse-on-surface": "#f3f0ef",
+        "on-tertiary": "#ffffff",
+        "surface-container-highest": "#e5e2e1"
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
+        full: "0.75rem"
+      },
+      fontFamily: {
+        headline: ["Newsreader"],
+        body: ["Manrope"],
+        label: ["Manrope"]
+      }
+    }
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.scale-102:hover {
+  transform: scale(1.02);
+}
+
+/* Custom spacing for editorial feel */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}

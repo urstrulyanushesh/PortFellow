@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#ed69ff",
+                    "on-tertiary-fixed": "#320032",
+                    "error-container": "#a70138",
+                    "primary-fixed": "#ed69ff",
+                    "secondary": "#af88ff",
+                    "primary-dim": "#ec63ff",
+                    "secondary-container": "#6001d1",
+                    "inverse-primary": "#a300bb",
+                    "secondary-fixed": "#dcc9ff",
+                    "on-primary-fixed-variant": "#51005d",
+                    "on-secondary-fixed": "#430097",
+                    "tertiary": "#ff51fa",
+                    "surface-container-high": "#201f1f",
+                    "tertiary-dim": "#ff51fa",
+                    "on-error-container": "#ffb2b9",
+                    "on-error": "#490013",
+                    "surface-tint": "#f382ff",
+                    "error-dim": "#d73357",
+                    "background": "#0e0e0e",
+                    "on-tertiary": "#400040",
+                    "surface-bright": "#2c2c2c",
+                    "inverse-surface": "#fcf8f8",
+                    "on-surface-variant": "#adaaaa",
+                    "surface-container-highest": "#262626",
+                    "surface-dim": "#0e0e0e",
+                    "surface": "#0e0e0e",
+                    "primary-fixed-dim": "#e451f9",
+                    "on-background": "#ffffff",
+                    "on-secondary-fixed-variant": "#6514d6",
+                    "on-secondary-container": "#e1d0ff",
+                    "on-tertiary-container": "#230023",
+                    "on-secondary": "#2b0065",
+                    "on-primary-container": "#41004c",
+                    "surface-variant": "#262626",
+                    "on-tertiary-fixed-variant": "#6a006a",
+                    "outline": "#777575",
+                    "primary": "#f382ff",
+                    "secondary-fixed-dim": "#d0b8ff",
+                    "surface-container-low": "#131313",
+                    "on-primary": "#540061",
+                    "surface-container-lowest": "#000000",
+                    "tertiary-container": "#fe00fe",
+                    "secondary-dim": "#8a4cfc",
+                    "tertiary-fixed-dim": "#ff61f8",
+                    "outline-variant": "#494847",
+                    "error": "#ff6e84",
+                    "on-surface": "#ffffff",
+                    "tertiary-fixed": "#ff81f5",
+                    "inverse-on-surface": "#565554",
+                    "surface-container": "#1a1919",
+                    "on-primary-fixed": "#000000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    display: inline-block;
+    vertical-align: middle
+    }
+.chamfered {
+    clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)
+    }
+.text-glow {
+    text-shadow: 0 0 15px rgba(243, 130, 255, 0.4)
+    }
+.bg-noise {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuA5trWVVzEB9qKoceG0Mhf2bRrWz8q7WjHjQB578PaUE8nfj0q3OhhK61MG3yLG9yLCO2_VmEnwX0EKZcz_433e0CpNqPT7gZJ_TcNJSd6byVxTkvJ1QYTpuWrVqIZozhf8OAMRN56R4zJzvYaEXJc8ix_5s3nmfYMylWX4uNHmfyi-bPZpiduxb9oMwFasISA3XZpmk3zV6bbQItZNwDbuJc7kw9ID-k5guCy-bkan7XjtfgrIeaewSGmNrzq8AtFkTLnriHS6NSu4);
+    opacity: 0.03
+    }</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 rounded-b-none bg-[#0e0e0e]/70 backdrop-blur-xl border-b border-fuchsia-500/10 shadow-[0_8px_32px_0_rgba(243,130,255,0.05)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-full">
+<div class="text-2xl font-black tracking-widest text-fuchsia-500 uppercase font-headline">
+                AETHER
+            </div>
+<div class="hidden md:flex items-center space-x-10 font-['Space_Grotesk'] tracking-tighter">
+<a class="text-fuchsia-400 font-bold border-b-2 border-fuchsia-500 pb-1" href="#">Projects</a>
+<a class="text-zinc-400 font-medium hover:text-fuchsia-300 transition-colors" href="#">Experience</a>
+<a class="text-zinc-400 font-medium hover:text-fuchsia-300 transition-colors" href="#">Tech</a>
+<a class="text-zinc-400 font-medium hover:text-fuchsia-300 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="material-symbols-outlined text-zinc-400 hover:text-fuchsia-400 transition-all p-2 rounded-full hover:bg-fuchsia-500/10">
+                    terminal
+                </button>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold active:scale-95 transition-transform hover:shadow-[0_0_20px_rgba(243,130,255,0.4)]">
+                    Hire Me
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto relative overflow-hidden">
+<!-- Background Elements -->
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full -z-10"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/5 blur-[100px] rounded-full -z-10"></div>
+<!-- Header Section -->
+<header class="mb-20">
+<div class="flex items-center space-x-4 mb-4">
+<span class="h-[1px] w-12 bg-primary"></span>
+<span class="font-label text-sm uppercase tracking-[0.3em] text-primary">Selected Works</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-black tracking-tighter leading-none mb-6">
+                PROJECTS<span class="text-primary text-glow">.</span>
+</h1>
+<p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed">
+                Exploring the intersection of high-fidelity aesthetics and functional kinetic systems. Each project is a digital artifact carved from the neon void.
+            </p>
+</header>
+<!-- Projects Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Project 1: Featured Large -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden chamfered bg-surface-container-low border border-outline-variant/10 transition-all duration-500 hover:border-primary/30">
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-80 z-10"></div>
+<img class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="futuristic abstract 3D visualization of floating neon glass shards in a dark atmospheric space with purple and pink glowing edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2_WL_wck6x11c3fCkbzae8L8P9esOFiCWZ9lbTLmCYc5_0uqWIGS4oW5pkMC3YUoYvYY9tBmC4VcUnX2FaeLEEDGAy6kPWa5MuuUqkxRyCeQtYRRtyK_fkzgOn7hmJjZqJkszjSfG3f2jIFvB781VDs7CU3kprq7Jy2iw4mgWHc2zUX62kPcML_5tqM-jpZsPiUAM-Mkkc-VuloFNEJa4w6Jlo21xB11FqUjSly8mw3YPbScGI5jJ1tXwgLYCCkI-_Jn7Awm_KC72"/>
+<div class="absolute bottom-0 left-0 p-10 z-20 w-full">
+<div class="flex items-center space-x-3 mb-4">
+<span class="px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-widest uppercase rounded-full">Web3 Interface</span>
+<span class="px-3 py-1 bg-secondary/10 border border-secondary/20 text-secondary text-[10px] font-bold tracking-widest uppercase rounded-full">2024</span>
+</div>
+<h3 class="font-headline text-4xl font-bold mb-2 group-hover:text-primary transition-colors">NEO-FLUX ENGINE</h3>
+<p class="text-on-surface-variant max-w-md line-clamp-2">High-performance reactive data visualization for decentralized liquidity networks with zero-latency updates.</p>
+</div>
+<div class="absolute top-6 right-6 z-20">
+<span class="material-symbols-outlined text-on-surface bg-surface/80 p-3 rounded-full backdrop-blur-md group-hover:bg-primary group-hover:text-on-primary transition-all">north_east</span>
+</div>
+</div>
+</div>
+<!-- Project 2: Vertical Secondary -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="relative h-full overflow-hidden rounded-xl bg-surface-container-high border border-outline-variant/10 transition-all duration-500 hover:border-secondary/30">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface/60 to-surface z-10"></div>
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="macro close-up of a high-tech circuit board with pink and blue glowing light paths running through complex geometric processors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-p_1zoArsIPoUEdj9e25HRpsSzmilmUgIJr-A52vL_XfKZfMSgUz0WGDV-FBejeBUSoj-tMTMiQSROTTJSosHa5StLBjq0FTOVR16K-2mFpImKU2iYbiE9wCF8ZuyEwWjYvj7RZR1OaH-95xTABbQicBH4kuBOfK4N4EgcUOZjt9teeh3HitU_bRrVgODw_DnPS1BJ8qJVPeS84wIIutVoS1IYfvhwx_FXE_h_E5Zh2z07du-f1pfwwXOYUrFH6MJf9c7ML-8YZJE"/>
+<div class="absolute bottom-0 left-0 p-8 z-20">
+<div class="mb-4">
+<span class="px-3 py-1 bg-secondary/10 border border-secondary/20 text-secondary text-[10px] font-bold tracking-widest uppercase rounded-full">Cyber-Physical</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2 group-hover:text-secondary transition-colors">KINETIC CORE</h3>
+<p class="text-on-surface-variant text-sm">Hardware-level interface for real-time robotic telemetry monitoring.</p>
+</div>
+</div>
+</div>
+<!-- Project 3: Medium Horizontal -->
+<div class="md:col-span-5 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10 transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="abstract flowing liquid metal waves reflecting vibrant neon pink and purple lights in a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyfDEAHSXugBaXYIhDoy7NkcaBpZMNmd0blARVALgd2oXn-RSSDFfkwlXLte1ew-OogiPNKuKqPunXueYUO-rPMaqFU9ez25a-sdV6K8LFrGEJqcH5_CPSBn40QcoXfh0Le4VlAPhA7yJQQvzRiOP3UMGpDLKX6ShI8svT7uZ7xjtQZpJv_9jLaNh835aCklyZ0HBgF2uaCf7Ol4ur0oBaBjqKHwlkTKEzYKfOvGRt-WNDnie7YZEAc2UKkCQby54mPVUyJxBNLdKS"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-xl font-bold">ATMOS DESIGN SYSTEM</h3>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-6">A modular design ecosystem built for spatial computing and AR environments.</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-[10px] font-bold text-zinc-500 border border-zinc-500/30 px-2 py-0.5 rounded">FIGMA</span>
+<span class="text-[10px] font-bold text-zinc-500 border border-zinc-500/30 px-2 py-0.5 rounded">REACT</span>
+<span class="text-[10px] font-bold text-zinc-500 border border-zinc-500/30 px-2 py-0.5 rounded">WEBGL</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 4: High Impact Square -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="grid grid-cols-2 gap-8 h-full">
+<div class="bg-surface-container-highest rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-between transition-all duration-300 group-hover:bg-primary/5">
+<div>
+<div class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">data_thresholding</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3">SYNAPSE AI</h3>
+<p class="text-on-surface-variant text-sm">Neural network visualizer for interpreting complex LLM decision paths.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 flex items-center justify-between text-primary font-bold text-xs tracking-widest">
+                            VIEW CASE STUDY
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl">
+<div class="absolute inset-0 bg-noise z-10 pointer-events-none"></div>
+<img class="w-full h-full object-cover" data-alt="minimalist sculptural glass form with internal light glow against a pitch black background, elegant curves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT93BKhYIkaOraF4IDTMJXx2AMQjTgw7R5s7sITSw3Em5VO04OtXWLKhBCYVneDBxBbcbQcjME4HuDDWc40Acopn0Nxo2atetn-AX6bdltr-0YyDKxh4wxFVdMIeYF0Wa-lXLhXK2IUaQ_-FsljxbDUNbZs-0tqQxWoAvM3Ecg7SsFpP0TrbLDP9tc4YPugfv1Dl8pWAWa3qye09r3yZ8c-KmeLZ8DBcFWi3jM-FWgSo92MT11KgnGyMHgGMsdHTq7hkLDfw_NkpnL"/>
+<div class="absolute inset-0 flex items-center justify-center bg-surface/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="text-center p-6">
+<span class="material-symbols-outlined text-4xl mb-2">visibility</span>
+<p class="font-headline font-bold uppercase tracking-widest text-xs">Explore Media</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination/Navigation -->
+<footer class="mt-24 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+<div class="flex items-center space-x-2">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+<span class="w-2 h-1 bg-surface-container-highest rounded-full"></span>
+<span class="w-2 h-1 bg-surface-container-highest rounded-full"></span>
+</div>
+<div class="flex items-center space-x-8 font-headline font-bold tracking-widest text-xs text-on-surface-variant">
+<button class="hover:text-primary transition-colors flex items-center space-x-2">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+<span>PREVIOUS</span>
+</button>
+<button class="hover:text-primary transition-colors flex items-center space-x-2">
+<span>NEXT PROJECT</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</footer>
+</main>
+<!-- Global Footer -->
+<footer class="bg-[#131313] w-full py-12 px-8 mt-20">
+<div class="bg-gradient-to-r from-transparent via-fuchsia-500/20 to-transparent h-[1px] mb-8 max-w-7xl mx-auto"></div>
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto space-y-4 md:space-y-0 font-['Inter'] text-sm tracking-wide">
+<div class="text-lg font-bold text-fuchsia-500">
+                AETHER<span class="text-zinc-500 font-normal">.labs</span>
+</div>
+<div class="flex items-center space-x-8">
+<a class="text-zinc-500 hover:text-fuchsia-400 transition-colors duration-200 hover:translate-x-1 transition-transform" href="#">Github</a>
+<a class="text-zinc-500 hover:text-fuchsia-400 transition-colors duration-200 hover:translate-x-1 transition-transform" href="#">LinkedIn</a>
+<a class="text-zinc-500 hover:text-fuchsia-400 transition-colors duration-200 hover:translate-x-1 transition-transform" href="#">Dribbble</a>
+<a class="text-zinc-500 hover:text-fuchsia-400 transition-colors duration-200 hover:translate-x-1 transition-transform" href="#">Source</a>
+</div>
+<div class="text-zinc-500">
+                © 2024 Kinetic Luminary. All rights reserved.
+            </div>
+</div>
+</footer>
+<!-- FAB (Suppressed based on context of sub-page/details flow but can be active if this is main Projects list) -->
+<button class="fixed bottom-8 right-8 w-16 h-16 bg-primary text-on-primary rounded-full shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-40 group">
+<span class="material-symbols-outlined text-3xl group-hover:rotate-45 transition-transform">add</span>
+</button>
+</body></html>
