@@ -1,0 +1,120 @@
+/* Neo-Brutalist Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fdfd96; /* Classic Brutalist Yellow */
+  --text: #000000;
+  --accent: #ff90e8; /* Vibrant Pink */
+  --card-bg: #ffffff;
+  --border-width: 3px;
+  --shadow: 5px 5px 0px 0px #000000;
+}
+
+html {
+  font-family: 'Public Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem 5%;
+}
+
+main {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+  -webkit-text-stroke: 1px black;
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Hard-edged Cards */
+article {
+  background: var(--card-bg);
+  border: var(--border-width) solid var(--text);
+  box-shadow: var(--shadow);
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  transition: transform 0.1s ease;
+}
+
+article:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+/* Inputs & Form */
+input, textarea, select {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 700;
+  border: var(--border-width) solid var(--text);
+  border-radius: 0; /* Sharp corners */
+  background: #fff;
+  box-shadow: 3px 3px 0px 0px #000000;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: var(--text);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border: var(--border-width) solid var(--text);
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.1s;
+}
+
+button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+/* Components */
+.postCredit {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 10px;
+}
+
+.reactionButton {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  background: #fff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0px #000;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
