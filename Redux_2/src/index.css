@@ -1,0 +1,151 @@
+/* Glassmorphism Dark-Text Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Dynamic text colors */
+  --text-main: #1a1a1a;
+  --text-muted: #4a4a4a;
+  --glass-bg: rgba(255, 255, 255, 0.35);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --accent: #6e45e2;
+}
+
+html {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  /* High-contrast Neon Gradient */
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 25%, #7000ff 100%);
+  background-attachment: fixed;
+  color: var(--text-main);
+}
+
+
+body {
+  min-height: 100vh;
+  font-size: 1.1rem;
+}
+
+/* Glassy Navigation */
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid var(--glass-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* The Frosted Glass Card */
+article {
+  margin-bottom: 2rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  text-align: center;
+}
+
+h2 {
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Glassy Controls */
+input, textarea, select {
+  font: inherit;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--text-main);
+  padding: 0.8rem;
+  backdrop-filter: blur(5px);
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: white; /* Button text stays white for contrast on the purple */
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(110, 69, 226, 0.3);
+}
+
+/* Redux Specific items */
+.reactionButton {
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--text-main);
+  border: 1px solid var(--glass-border);
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+}
+
+.deleteButton {
+  background: rgba(255, 95, 95, 0.8);
+}
+
+.postCredit {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.postCredit a {
+  color: var(--accent);
+  font-weight: 700;
+}

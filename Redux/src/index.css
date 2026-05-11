@@ -1,0 +1,131 @@
+/* index.css - White Skeuomorphism / Tactile UI */
+
+:root {
+  --bg-color: #e0e5ec; /* A slightly grey-white is required for shadows to show */
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+  --primary-blue: #3b82f6;
+  --text-main: #31344b;
+  --text-soft: #6b7280;
+
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+#root {
+  width: 100%;
+  max-width: 580px;
+  padding: 40px 20px;
+}
+
+/* THE "OUTSET" BOX (Pops out from the page) */
+form, article {
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* This double shadow creates the 3D effect */
+  box-shadow: 
+    9px 9px 16px var(--shadow-dark), 
+    -9px -9px 16px var(--shadow-light);
+}
+
+/* FORM STYLES */
+form {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  text-transform: uppercase;
+  margin-bottom: -10px;
+}
+
+/* THE "INSET" INPUT (Looks carved into the page) */
+input, textarea, select {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  color: var(--text-main);
+  outline: none;
+  /* Inset shadow makes it look hollowed out */
+  box-shadow: 
+    inset 4px 4px 8px var(--shadow-dark), 
+    inset -4px -4px 8px var(--shadow-light);
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 
+    inset 2px 2px 4px var(--shadow-dark), 
+    inset -2px -2px 4px var(--shadow-light);
+}
+
+/* TACTILE 3D BUTTON */
+button {
+  background-color: var(--bg-color);
+  color: var(--primary-blue);
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 
+    6px 6px 12px var(--shadow-dark), 
+    -6px -6px 12px var(--shadow-light);
+}
+
+button:hover {
+  color: #2563eb;
+  box-shadow: 
+    3px 3px 6px var(--shadow-dark), 
+    -3px -3px 6px var(--shadow-light);
+}
+
+button:active {
+  /* Button "sinks" into the page when clicked */
+  box-shadow: 
+    inset 4px 4px 8px var(--shadow-dark), 
+    inset -4px -4px 8px var(--shadow-light);
+  transform: scale(0.98);
+}
+
+button:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* POSTS */
+article h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-main);
+}
+
+.postCredit {
+  font-size: 0.9rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin: 5px 0 15px 0;
+}
+
+article p:last-child {
+  line-height: 1.6;
+  color: #444;
+}

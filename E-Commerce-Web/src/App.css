@@ -1,0 +1,42 @@
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 30%),
+              radial-gradient(circle at bottom left, rgba(236, 72, 153, 0.2), transparent 28%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 25px 30px rgba(15, 23, 42, 0.08);
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #111827;
+  transform: translateY(-2px);
+}
+
